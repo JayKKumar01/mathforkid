@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EA9A"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/div"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/div"
+        android:onClick="gotoDiv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mul" />
+
+    <ImageButton
+        android:id="@+id/mul"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mul"
+        android:onClick="gotoMul"
+        app:layout_constraintBottom_toTopOf="@id/div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub" />
+
+    <ImageButton
+        android:id="@+id/sub"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/sub"
+        android:onClick="gotoSub"
+        app:layout_constraintBottom_toTopOf="@id/mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/add"
+        android:onClick="gotoAdd"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
